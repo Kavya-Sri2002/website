@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Tagesschrift&display=swap" rel="stylesheet">
+<style>
+*{
+padding: 0px;
+margin: 0px;
+outline: none;
+}
+.cont{
+width:100%;
+height:8vh;
+display: flex; 
+scrollbar-width: none;  
+}
+.head {
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+} 
+.head{
+font-size:50px;
+width:23%;
+height:17Vh;
+background-color:rgb(246, 114, 20);
+color: white;
+text-align: center;
+padding-top:50px;
+}
+.con{
+width:77%;
+height:8vh;
+background-color:rgba(17, 7, 7, 0.76);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.fa-envelope{
+color:orangered;
+padding-left:50px;
+padding-right: 15px;
+font-size:16px;
+padding-top:10px;
+}
+span{
+font-size:18px;
+color:white;
+padding-right:30px;
+}
+.fa-phone{
+color:orangered;
+padding-left:50px;
+padding-right: 15px;
+font-size:16px;
+padding-top:10px;  
+}
+.menu{   
+width:73%;
+ height:103px;
+ display: flex;
+align-items: center;
+background-color: black;
+gap:25px;
+padding-left:340px;
+}
+.menu a{
+font-size:19px;
+color:#ffffff;
+text-decoration:none;
+font-weight: bolder;
+}
+.menu a:hover{
+  color:darkorange;
+  font-size: 20px;
+}
+.navbar{
+  display: flex;
+  gap: 20px;
+}
+.dropdown{
+    position: relative;
+      /* display: inline-block; */
+}
+.dropbtn{
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight:bolder;
+}
+.dropbtn:hover{
+   color:darkorange;
+  font-size: 20px;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 180px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+}
+ .dropdown:hover .dropdown-content {
+      display: block;
+ } 
+.maincon{
+ /* background-image: url("https://themewagon.github.io/burgerking/img/carousel-1.jpg");  */
+background-color: rgba(0, 0, 0, 0.799);
+background-size: cover;
+height: 135vh;
+width: 100%;
+text-align: center;
+}
+.maincon h1{
+font-size:120px;
+padding-top:30px;
+padding-bottom: 30px;
+color:#ffffff;
+}
+.maincon h1{
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+.con1{
+display: flex;
+/* gap:30px; */
+justify-content: space-evenly;
+}
+.img1{
+height:260px;
+width:88%;
+padding-left:15px;
+}
+.img2{
+height:510px;
+width:32%;
+padding-left:30px;
+}
+.img3{
+height:260px;
+width:85%;
+padding-top:25px;
+}
+.contt-left p{
+  width:385px;
+  font-size:20px;
+  color: rgba(255, 255, 255, 0.678);
+  text-align:left;
+  padding-left:30px;
+  padding-top:30px;
+}
+.contt-right p{
+  width:360px;
+  font-size:20px;
+  color: rgba(255, 255, 255, 0.678);
+  text-align:left;
+  padding-left:40px;
+}
+.fa-arrow-down-long{
+  font-size:35px;
+  padding-top:40px;
+  color: #ffffff;
+  padding-right:350px; 
+  animation: moveUpDown 1s infinite;
+}
+@keyframes moveUpDown {
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+.fa-arrow-up-long{
+  font-size:35px;
+  padding-top:40px;
+  color: #ffffff;
+  padding-right:300px;
+  animation: moveUpDown 1s infinite;
+}
+.con2{
+display: flex;
+}
+.con2 img{
+padding-top:50px;
+border-top-left-radius:420px;
+height:117vh;
+width:42%;
+}
+.con2-right{
+  padding-top:55px;
+  padding-left: 50px;
+}
+.con2-right h5{
+  font-size:20px;
+  color: darkorange;
+}
+.con2-right h1{
+font-size:50px;
+color:black;
+width:400px;
+}
+.con2-right h1{
+  font-family: "Stardos Stencil", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+.con2-right p{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.552);
+  width:650px;
+  padding-top:20px;
+}
+.left-card1{
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction:row;
+  gap:25px;
+}
+.left-card{
+  background-color:#7a767648;
+  border-radius:18px;
+  height:50vh;
+  width:38%;
+  margin-top:50px;
+}
+.left-card img{
+  height:60px;
+  width:80px;
+  border-radius:50%;
+  margin-top:20px;
+  margin-left:10px;
+  padding:5px;
+  background-color:orangered;
+}
+.left-card h1{
+font-size:22px;
+padding-left:10px;
+padding-top: 10px;
+}
+.left-card p{
+ font-size:20px;
+padding-left:10px; 
+width:320px;
+}
+.con3{
+  background-color: rgba(0, 0, 0, 0.786);
+  width: 100%;
+  height:30vh;
+  margin-top: 50px;
+  display: flex;
+ align-items: center;
+  justify-content:space-evenly;
+}
+.fa-star,.fa-users,.fa-check,.fa-mug-hot{
+  color: orangered;
+  font-size:25px;
+  border-radius: 50%;
+  height:60px;
+  width:65px;
+  display: flex;
+  align-items: center;
+  padding-left:32px;
+  background-color:black; 
+}
+.con3 h1{
+  font-size:30px;
+  color: white;
+  margin-right:20px;
+}
+.con4{
+  background-color:black;
+  height:110Vh;
+  width: 100%;
+  margin-top:60px;
+  padding-top: 70px;
+  padding-left:30px;
+}
+.con4-cards{
+display: flex;
+justify-content: space-evenly;
+}
+.con4-cards1{
+  border-radius:8px;
+ background:linear-gradient(rgba(255, 255, 255, 0.398),rgba(0, 0, 0, 0.746));
+  height:350px;
+  width:25%;
+  text-align: center;
+  box-shadow: inset 0 4px 10px rgba(249, 244, 244, 0.937);
+}
+.con4-cards1 h1{
+  font-size:28px;
+  font-family: "Stardos Stencil", system-ui;
+  color:black;
+}
+.con4-cards1 p{
+font-size: 18px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 10px;
+color:white;
+}
+.con4-cards1 h4{
+font-size:18px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 20px; 
+color: orangered;
+}
+.fa-arrow-right-long{
+  padding-left:8px;
+  padding-top:5px;
+  font-size:15px;
+}
+.btn-head h1{
+  color:orangered;
+  font-size:50px;
+  font-family: "Stardos Stencil", system-ui;
+  text-align: center;
+  padding-top:35px;
+}
+.btn-head h2{
+  color:#ffffff;
+  font-size:50px;
+  font-family: "Stardos Stencil", system-ui;
+  text-align: center;
+}
+.btn-head button{
+  color: white;
+  width:150px;
+  height:50px;
+  border-radius:10px;
+  background-color: orangered;
+  font-size:15px;
+  border: none;
+  margin-left:550px;
+  margin-top:30px;
+}
+.con5{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-top:80px;
+}
+.con5 h4{
+  color: orangered;
+  font-size:25px;
+  letter-spacing:5px;
+}
+.con5 h1{
+  color: black;
+  font-size:60px;
+  letter-spacing:5px;
+  font-family: "Stardos Stencil", system-ui;;
+}
+.con5-btn{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap:30px;
+  margin-top:30px;
+  margin-bottom: 35px;
+}
+.con5-btn button{
+ color: white;
+  width:150px;
+  height:50px;
+  border-radius:10px;
+  background-color:black;
+  font-size:15px;
+ border: none;
+}
+.con5-btn button:hover{
+background-color: orangered;
+}
+.con6 img{
+  height:200px;
+  width:300px;
+
+}
+.main-cards{
+display: flex;
+flex-direction:row;
+justify-content:space-evenly;
+margin-top: 80px;
+}
+.cards{
+height:500px;
+ width: 380px;
+overflow: hidden;
+position: relative;
+z-index: 1;
+transition: all 0.3s ease;
+}
+.cards img{
+  height:500px;
+  width: 380px;
+  border-top-left-radius:180px;
+  
+}
+.cont-cards{
+ height:100px;
+ width: 380px;
+ padding: 6px;
+ box-sizing: border-box;
+ position: absolute;
+ bottom:0px;
+ background: rgba(27, 27, 27, 0.669);
+ color: #ffffff;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+.cont-cards h1{
+  font-size:28px;
+  padding-bottom: 10px;
+}
+.cont-cards p{
+   font-size:15px;
+}
+.cards:hover{
+  cursor: pointer;
+}
+.cards:hover .cont-cards{
+height:500px;
+border-top-left-radius:180px;
+position: absolute;
+padding-top:400px;
+}
+.con7{
+  display: flex;
+} 
+.left-slide{
+  margin-top:80px;
+  margin-left:50px;
+  border-top-left-radius:250px;
+  width:45%;
+  height:90vh;
+  animation: images 15s infinite alternate ease-in-out;
+}
+@keyframes images{
+  30%{
+    background: url("https://themewagon.github.io/Chefer/img/menu-7.jpg");
+    background-size: cover;
+  }
+  50%{
+    background: url("https://themewagon.github.io/Chefer/img/menu-4.jpg");
+    background-size: cover;
+  }
+  70%{
+    background: url("https://themewagon.github.io/Chefer/img/menu-5.jpg");
+     background-size: cover;
+  }
+  100%{
+     background: url("https://themewagon.github.io/Chefer/img/menu-6.jpg");
+     background-size: cover;
+  }
+}
+.right-slide{
+  background-color: black;
+  width:50%;
+  height:90vh;
+  margin-top:80px;
+  border-bottom-right-radius:250px;
+}
+.right-slide h2{
+  color: orangered;
+  font-size:20px;
+  letter-spacing: 2px;
+  padding-top:30px;
+  padding-left: 30px;
+}
+.right-slide h1{
+  color: white;
+  font-family: "Stardos Stencil", system-ui;
+  font-size:40px;
+  letter-spacing: 2px;
+  padding-top:10px;
+  padding-left: 30px;
+}
+.right-slide p{
+color:#ffffff;
+  font-family: "Stardos Stencil", system-ui;
+  font-size:25px;
+  padding-top:10px;
+  padding-left: 30px;  
+}
+.fa-quote-left{
+  color: orangered;
+  font-size:25px;
+  padding-right:20px;  
+}
+.testimonal{
+  display: flex;
+}
+.testimonal img{
+  height:18vh;
+  border-radius:50%;
+  margin-top:30px;
+  margin-left: 30px;
+}
+.testimonal h1{
+  font-size:25px;
+  padding-top:35px;
+  color: white;
+}
+.arrows{
+ display: flex;
+}
+.arrows .fa-arrow-left-long{
+ border-radius: 50%;
+  background-color:orangered;
+  height:40px;
+  font-size: 22px;
+  width:58px;
+  text-align: center;
+  padding-top:20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.arrows .fa-arrow-right-long{
+ border-radius: 50%;
+  background-color:orangered;
+  height:40px;
+  font-size:22px;
+  width:50px;
+  text-align: center;
+  padding-top:20px;
+  margin-top: 20px; 
+}
+.con8{
+  text-align: center;
+  padding-top:80px;
+}
+.con8 h2{
+  color: orangered;
+  font-size:25px;
+  letter-spacing:2px;
+}
+.con8 h1{
+ color:black;
+  font-size:55px; 
+  padding-top:10px;
+  width:420px;
+ padding-left:420px;
+  font-family: "Stardos Stencil", system-ui;
+}
+.menu-cards{
+  display: flex;
+  justify-content: space-evenly;
+}
+.items-card{
+ background-color: black;
+  height:450px;
+  width:380px;
+  margin-top:80px;
+  border-radius:15px;
+}
+.items-card img{
+  height:300px;
+  width:380px;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  transition:transform 0.3s ease;
+  transform: scale(1);
+}
+.items-card img:hover{
+transform:scale(1.02);
+width:380px;
+height:300px;
+}
+.items-cont{
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
+ }
+.month {
+  color:orangered;
+  font-weight: bold;
+}
+.line{
+  width:1px;
+  height:80px;
+  background-color: #ffffff;
+}
+.text-cont{
+  font-family: 'Georgia', serif;
+  font-size:20px;
+  width:320px;
+}
+.menu-cards2{
+  display: flex;
+  justify-content: space-evenly;
+}
+.con9 img{
+  width:200px;
+  height:200px;
+  margin-top:80px;
+}
+.con10{
+  background-color: rgba(37, 35, 35, 0.932);
+  width: 100%;
+  height:60vh;
+  display: flex;
+flex-direction:row;
+justify-content: space-evenly;
+}
+.con-head{
+  display: flex;
+flex-direction:column;
+align-items: start;
+padding-top:33px;
+gap:20px;
+}
+.con-head h3{
+  font-size:30px;
+  color: #ffffff;
+}
+.con-head .fa-location-dot,.fa-envelope ,.fa-phone{
+  color: orangered;
+  padding-left:20px;
+  padding-right: 20px;
+}
+.con-head p{
+  color: rgba(255, 255, 255, 0.821);
+  font-size:18px;
+}
+.social-icons{
+  font-size:20px;
+  padding-left:20px;
+  margin-top:20px;
+}
+.social-icons a{
+  color:white;
+  padding:12px;
+   border-radius:50%;
+  background-color: orangered;
+}
+.con-head1{
+  text-align: start;
+  padding-left: 40px;
+  padding-top: 33px;
+}
+.con-head1 h3{
+  font-size:30px;
+  color: #ffffff;
+}
+.con-head1 p{
+ color: rgba(255, 255, 255, 0.821);
+  font-size:18px; 
+}
+.con-head1 .fa-arrow-right{
+  color: orangered;
+  padding:10px;
+}
+.con11{
+  background-color: black;
+  height:60vh;
+  width:30%;
+  margin-left: 40px;
+}
+.footer-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-card h2{
+  color: #ffffff;
+  font-size:32px;
+  padding-top:50px;
+  font-family:"Stardos Stencil", system-ui;
+}
+.footer-card h4{
+  color: #ffffff;
+  font-size:18px;
+  font-weight:bolder;
+  padding-top:15px;
+}
+.footer-card p{
+  color: #ffffff9b;
+  font-size:20px;
+  padding-top:18px;
+  width:340px;
+  padding-left: 20px;
+}
+.footer-btn{
+  display: flex;
+}
+.in1{
+  width:140px;
+  height:50px;
+  margin-top:20px;
+  padding-left: 20px;
+  margin-left:65px;
+   border: none;
+   font-size:15px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius:10px ;
+}
+.in2{
+ width:80px;
+  height:50px;
+  margin-top:20px;
+  padding-left: 20px; 
+  font-size:15px;
+  border: none;
+  background-color:orangered;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius:10px ;
+}
+.in2:hover{
+  background-color: rgba(61, 18, 2, 0.68);
+  color: black;
+}
+footer{
+  background-color:black;
+  height:8vh;
+  width: 100%;
+  font-size:18px;
+  color:rgba(255, 255, 255, 0.339);
+  padding-top: 25px;
+}
+b{
+  color: white;
+  font-weight: bolder;
+}
+</style>
+</head>
+<body>
+<div class="cont">
+   <h1 class="head">CHEFER</h1>
+<div class="con">
+   <p><i class="fa-solid fa-envelope"></i><span>Info@example.com</span></p>
+   <p><i class="fa-solid fa-phone"></i><span>+012 345 6789</span></p>
+</div>
+</div>
+<nav>
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#about Us">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#chefs">Chefs</a>
+    <a href="#contact">Contact</a>
+   <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Pages <i class="fa-solid fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Features</a>
+          <a href="#">Blog Post</a>
+          <a href="#">Testimonial</a>
+          <a href="#">404 Error</a>
+        </div>
+    </div>
+    </div>
+  </div>
+</nav>
+<div id="home">
+<div class="maincon">
+      <h1>John Doe</h1>
+    <div class="con1">
+      <div class="contt-left">
+       <img src="https://themewagon.github.io/Chefer/img/hero-2.jpg" class="img1"/>
+               <i class="fa-solid fa-arrow-down-long"></i>
+           <p>Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod.</p>
+           </div>
+        <img src="https://themewagon.github.io/Chefer/img/hero-1.jpg" class="img2"/>
+        <div class="contt-right">
+            <p>Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod.</p>
+             <i class="fa-solid fa-arrow-up-long"></i>
+            <img src="https://themewagon.github.io/Chefer/img/hero-3.jpg" class="img3"/>
+        </div>
+    </div>
+</div>
+</div>
+<div id="about Us">
+<div class="con2">
+  <img src="https://themewagon.github.io/Chefer/img/about.jpg"/>
+  <div class="con2-right">
+    <h5>About Us</h5>
+    <h1>Cooking Together With The Expert</h1>
+    <p>Nonumy erat diam duo labore clita. Sit magna ipsum dolor sed ea duo at ut. Tempor sit lorem sit magna ipsum duo. Sit eos dolor ut sea rebum, diam sea rebum lorem kasd ut ipsum dolor est ipsum. Et stet amet justo amet clita erat, ipsum sed at ipsum eirmod labore lorem.</p>
+  <div class="left-card1">
+    <div class="left-card">
+    <img src="https://themewagon.github.io/Chefer/img/feature-1.png"/>
+    <h1>Master Chefs</h1>
+    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore.</p>
+  </div>
+  <div class="left-card">
+    <img src="https://themewagon.github.io/Chefer/img/feature-3.png"/>
+     <h1>Quality Food</h1>
+     <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore.</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="con3">
+   <i class="fa-solid fa-star"></i>
+   <h1>Years-1234</h1>
+  <i class="fa-solid fa-users"></i>
+   <h1>Years-1234</h1>
+  <i class="fa-solid fa-check"></i>
+    <h1>Years-1234</h1>
+  <i class="fa-solid fa-mug-hot"></i>
+    <h1>Years-1234</h1>
+</div>
+<div id="menu">
+<div class="con4">
+  <div class="con4-cards">
+    <div class="con4-cards1">
+     <img src="https://themewagon.github.io/Chefer/img/feature-1.png"/>
+      <h1>Best Chef</h1>
+      <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet</p>
+      <h4>Read More<i class="fa-solid fa-arrow-right-long"></i></h4>
+  </div>
+  <div class="con4-cards1">
+     <img src="https://themewagon.github.io/Chefer/img/feature-2.png"/>
+      <h1>Menu Variations</h1>
+      <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet</p>
+      <h4>Read More<i class="fa-solid fa-arrow-right-long"></i></h4>
+  </div>
+    <div class="con4-cards1">
+     <img src="https://themewagon.github.io/Chefer/img/feature-3.png"/>
+      <h1>Healthy Food</h1>
+      <p>Sed amet tempor amet sit kasd sea lorem dolor ipsum elitr dolor amet kasd elitr duo vero amet amet stet</p>
+      <h4>Read More<i class="fa-solid fa-arrow-right-long"></i></h4>
+    </div>
+  </div>
+    <div class="btn-head">
+      <h1>30% Discount</h1>
+      <h2>For This Summer</h2>
+      <button>Order Now</button>
+    </div>
+</div>
+</div>
+<div class="con5">
+  <h4>Our Menu</h4>
+  <h1>Hands Craft More<br> Than Meals</h1>
+<div class="con5-btn">
+  <button>BREAKFAST</button>
+  <button>LUNCH</button>
+  <button>DINNER</button>
+</div>
+</div>
+<div class="con6">
+ <img src="https://themewagon.github.io/Chefer/img/menu-1.jpg"/>
+ <img src="https://themewagon.github.io/Chefer/img/menu-2.jpg"/>
+ <img src="https://themewagon.github.io/Chefer/img/menu-3.jpg"/>
+ <img src="https://themewagon.github.io/Chefer/img/menu-4.jpg"/>
+ <img src="https://themewagon.github.io/Chefer/img/menu-5.jpg"/>
+ <img src="https://themewagon.github.io/Chefer/img/menu-6.jpg"/>
+ <img src="https://themewagon.github.io/Chefer/img/menu-7.jpg"/>
+ <img src="https://themewagon.github.io/Chefer/img/menu-8.jpg"/>
+</div>
+<div id="chefs">
+<div class="con5">
+  <h4>Expert Chefs</h4>
+  <h1>Let's Meet The<br> Expert</h1>
+</div>
+<div class="main-cards">
+  <div class="cards">
+    <img src="https://themewagon.github.io/Chefer/img/team-1.jpg"/>
+    <div class="cont-cards">
+      <h1>John Deo</h1>
+      <p>ASSISTANT</p>
+   </div>
+  </div>
+  <div class="cards">
+    <img src="https://themewagon.github.io/Chefer/img/team-2.jpg"/>
+    <div class="cont-cards">
+      <h1>John Deo</h1>
+      <p>ASSISTANT</p>
+    </div>
+  </div>
+  <div class="cards">
+    <img src="https://themewagon.github.io/Chefer/img/team-3.jpg"/>
+    <div class="cont-cards">
+      <h1>John Deo</h1>
+      <p>ASSISTANT</p>
+    </div>
+  </div>
+</div>
+</div> 
+<div class="con7">
+  <div class="left-slide"></div>
+  <div class="right-slide">
+     <h2>TESTIMONIAL</h2>
+     <h1>Our Client Say</h1>
+     <p><i class="fa-solid fa-quote-left"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et laboreet tempor diam tempor erat dolor rebum sit ipsum</p>
+    <div class="testimonal">
+       <img src="https://themewagon.github.io/Chefer/img/testimonial-1.jpg"/>
+        <h1>Client Name<br>Profession</h1>
+    </div>
+    <div class="arrows">
+      <h1><i class="fa-solid fa-arrow-left-long"></i></h1>
+      <h1><i class="fa-solid fa-arrow-right-long"></i></h1>
+    </div>
+    </div>  
+</div>
+<div class="con8">
+  <h2>Our Blog</h2>
+  <h1>Latest Articles From Food Blog</h1>
+  <div class="menu-cards">
+    <div class="items-card">
+      <img src="https://themewagon.github.io/Chefer/img/menu-3.jpg"/>
+    <div class="items-cont">
+      <div class="date-block">
+      <span>01</span>
+      <span class="month">JANUARY</span>
+      <span>2045</span>
+    </div>
+      <div class="line"></div>
+      <div class="text-cont">
+        <p>Send amet tempor amet sit kasd sea lorem</p>
+      </div>
+      </div>
+  </div>
+    <div class="items-card">
+      <img src="https://themewagon.github.io/Chefer/img/menu-5.jpg"/>
+    <div class="items-cont">
+      <div class="date-block">
+      <span>01</span>
+      <span class="month">JANUARY</span>
+      <span>2045</span>
+    </div>
+      <div class="line"></div>
+      <div class="text-cont">
+        <p>Send amet tempor amet sit kasd sea lorem</p>
+      </div>
+      </div>
+  </div>
+    <div class="items-card">
+      <img src="https://themewagon.github.io/Chefer/img/menu-7.jpg"/>
+    <div class="items-cont">
+      <div class="date-block">
+      <span>01</span>
+      <span class="month">JANUARY</span>
+      <span>2045</span>
+    </div>
+      <div class="line"></div>
+      <div class="text-cont">
+        <p>Send amet tempor amet sit kasd sea lorem</p>
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="menu-cards2">
+    <div class="items-card">
+      <img src="https://themewagon.github.io/Chefer/img/menu-8.jpg"/>
+    <div class="items-cont">
+      <div class="date-block">
+      <span>01</span>
+      <span class="month">JANUARY</span>
+      <span>2045</span>
+    </div>
+      <div class="line"></div>
+      <div class="text-cont">
+        <p>Send amet tempor amet sit kasd sea lorem</p>
+      </div>
+      </div>
+  </div>
+  <div class="items-card">
+      <img src="https://themewagon.github.io/Chefer/img/menu-1.jpg"/>
+    <div class="items-cont">
+      <div class="date-block">
+      <span>01</span>
+      <span class="month">JANUARY</span>
+      <span>2045</span>
+    </div>
+      <div class="line"></div>
+      <div class="text-cont">
+        <p>Send amet tempor amet sit kasd sea lorem</p>
+      </div>
+      </div>
+  </div>
+  <div class="items-card">
+      <img src="https://themewagon.github.io/Chefer/img/menu-6.jpg"/>
+    <div class="items-cont">
+      <div class="date-block">
+      <span>01</span>
+      <span class="month">JANUARY</span>
+      <span>2045</span>
+    </div>
+      <div class="line"></div>
+      <div class="text-cont">
+        <p>Send amet tempor amet sit kasd sea lorem</p>
+      </div>
+      </div>
+  </div>
+  </div>
+  <div id="contact"></div>
+<div class="con9">
+  <img src="https://themewagon.github.io/Chefer/img/menu-6.jpg"/>
+  <img src="https://themewagon.github.io/Chefer/img/menu-5.jpg"/>
+   <img src="https://themewagon.github.io/Chefer/img/menu-7.jpg"/>
+  <img src="https://themewagon.github.io/Chefer/img/menu-4.jpg"/>
+  <img src="https://themewagon.github.io/Chefer/img/menu-2.jpg"/>
+   <img src="https://themewagon.github.io/Chefer/img/menu-3.jpg"/>
+</div>
+<div class="con10">
+   <div class="con-head">
+    <h3>Get In Touch</h3>
+  <p><i class="fa-solid fa-location-dot"></i>123 Street, New York, USA</p>
+  <p><i class="fa-solid fa-envelope"></i>info@example.com</p>
+  <p><i class="fa-solid fa-phone"></i>+012 345 67890</p>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+  </div>
+<div class="con-head1">
+    <h3>Quick Links</h3>
+    <p><i class="fa-solid fa-arrow-right"></i>Home</p>
+    <p><i class="fa-solid fa-arrow-right"></i>About Us</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Food Menu</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Our Chefs</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Latest Blog</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Contact Us</p>
+</div>
+<div class="con-head1">
+    <h3>More Links</h3>
+    <p><i class="fa-solid fa-arrow-right"></i>Home</p>
+    <p><i class="fa-solid fa-arrow-right"></i>About Us</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Food Menu</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Our Chefs</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Latest Blog</p>
+  <p><i class="fa-solid fa-arrow-right"></i>Contact Us</p>
+</div>
+<div class="con11">
+  <div class="footer-card">
+  <h2>Newsletter</h2>
+  <h4>SUBSCRIBE OUR NEWSLETTER</h4>
+  <p>Amet justo diam dolor rebum lorem sit stet sea justo kasd</p>
+  <div class="footer-btn">
+  <input type="text" placeholder="Your Email" class="in1"/>
+  <input type="text" placeholder="Sign Up" class="in2"/>
+</div>
+</div>
+</div>
+</div>
+<footer>© <b>Your Site Name.</b>All Rights Reserved. Distributed by <b>ThemeWagon</b></footer>
+</body>
+</html>
